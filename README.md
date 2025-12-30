@@ -18,11 +18,7 @@ Z datového souboru jsou extrahovány klíčové parametry hráčů pro další 
 - Výpočet základních charakteristik: **střední hodnota**, **rozptyl** a **směrodatná odchylka**.
 - Analýza vybraných sloupců (např. průměrný počet bodů na zápas).
 
-### Ukázka statistické analýzy:
-
-![Ukázka výpočtu statistik](ukazka_vypoctu.png)
-
----
+--- 
 
 ## 2. Vizualizace a odhad rozdělení pravděpodobnosti
 
@@ -39,9 +35,13 @@ Generují se histogramy pro ověření typu rozdělení dat a jejich četnosti.
 
 Výstupní grafy obsahují jak experimentální data (sloupce histogramu), tak proloženou teoretickou hustotu pravděpodobnosti.
 
+--- 
+
 ## Odkaz na kódy
 
 - [💾 Hlavní skript (Live Script)](./StatistikaCalabek237881.mlx)
+
+--- 
 
 ## Shrnutí funkcionality
 
@@ -63,4 +63,4 @@ Výstupní grafy obsahují jak experimentální data (sloupce histogramu), tak p
 
 ---
 
-> Projekt byl vypracován Bc. Tomášem Calábkem (ID: 237881) jako semestrální úloha pro kurz **MPC-CSI** (Číslicové signály a systémy) na VUT FEKT.
+> Projekt byl vypracován Bc. Tomášem Calábkem (ID: 237881) pro kurz **MPC-CSI** (Číslicové signály a systémy) na VUT FEKT.
