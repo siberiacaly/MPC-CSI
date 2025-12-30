@@ -1,41 +1,66 @@
-# MPC-CSI: NBA Data Statistical Analysis 🏀
+# Projekt do předmětu MPC-CSI
 
-This repository contains a semester project for the course **MPC-CSI (Digital Signals and Systems)**, taught at the Faculty of Electrical Engineering and Communication (FEEC) at the Brno University of Technology (BUT).
+## Zadání projektu
 
-## 📋 Project Description
+Cílem bylo vytvořit funkční skript pro **statistickou analýzu reálných dat**.  
+Použit je **dataset statistik hráčů NBA** (National Basketball Association) – tato data jsou dále zpracována a analyzována.  
+Jednotlivé parametry (např. body, výška, váha) jsou zkoumány z pohledu **náhodných procesů**.  
+Součástí je také **vizualizace dat a odhad funkcí hustoty pravděpodobnosti (PDF)**.
 
-The goal of this project is the practical application of mathematical statistics methods on real-world data. An **NBA (National Basketball Association) player statistics dataset** was chosen for the analysis.
+---
 
-The project demonstrates data processing within the MATLAB environment, ranging from data import to the visualization of results.
+## 1. Načtení a statistické zpracování dat
 
-### Key Analysis Points:
-* **Data Import & Preparation:** Loading the basketball statistics database.
-* **Descriptive Statistics:** Calculation of basic characteristics (mean, variance, standard deviation) for selected parameters (e.g., points per game, shooting percentage).
-* **Distribution Analysis:** Creation of histograms and Probability Density Function (PDF) estimation.
-* **Visualization:** Graphical representation of statistical phenomena using an interactive Live Script.
+Prvním krokem bylo zajištění importu databáze a výběr relevantních veličin.  
+Z datového souboru jsou extrahovány klíčové parametry hráčů pro další zpracování.
 
-## 📂 Repository Contents
+- Zpracování probíhá v prostředí **MATLAB** (Live Script).
+- Výpočet základních charakteristik: **střední hodnota**, **rozptyl** a **směrodatná odchylka**.
+- Analýza vybraných sloupců (např. průměrný počet bodů na zápas).
 
-* **`StatistikaCalabek237881.mlx`** – The main project file (MATLAB Live Script). It contains:
-    * Source code for calculations.
-    * Explanatory text and methodology.
-    * Generated graphs and output tables.
-* **`LICENSE`** – Project license (MIT).
+### Ukázka statistické analýzy:
 
-## 🛠️ Requirements and Usage
+![Ukázka výpočtu statistik](ukazka_vypoctu.png)
 
-To open and run the project with full interactivity, the following software is required:
-1.  **MATLAB** (a version supporting `.mlx` files).
-2.  **Statistics and Machine Learning Toolbox** (recommended for advanced statistical functions).
+---
 
-**How to run:**
-1.  Clone or download this repository.
-2.  Open the `StatistikaCalabek237881.mlx` file in MATLAB.
-3.  Run the script (click *Run All*) to load the data and generate the charts.
+## 2. Vizualizace a odhad rozdělení pravděpodobnosti
 
-## 👤 Author
+Po získání popisných statistik skript provádí **grafickou vizualizaci**.  
+Generují se histogramy pro ověření typu rozdělení dat a jejich četnosti.
 
-* **Author:** Calabek
-* **BUT ID:** 237881
-* **Faculty:** FEEC, Brno University of Technology
-* **Course:** MPC-CSI
+**Skript provádí:**
+
+- vykreslení **normovaného histogramu** vybrané veličiny
+- proložení dat teoretickou křivkou (**odhad PDF**)
+- porovnání teoretického modelu s reálnými daty
+
+> Analýza slouží k ověření, zda data odpovídají normálnímu (Gaussovu) rozdělení nebo vykazují jiné statistické vlastnosti.
+
+Výstupní grafy obsahují jak experimentální data (sloupce histogramu), tak proloženou teoretickou hustotu pravděpodobnosti.
+
+## Odkaz na kódy
+
+- [💾 Hlavní skript (Live Script)](./StatistikaCalabek237881.mlx)
+
+## Shrnutí funkcionality
+
+- ✅ Import a parsování datasetu NBA statistik
+- ✅ Výpočet střední hodnoty, rozptylu a směrodatné odchylky
+- ✅ Tvorba histogramů četností
+- ✅ Odhad a vykreslení funkce hustoty pravděpodobnosti (PDF)
+- ✅ Interaktivní prezentace výsledků v MATLAB Live Editoru
+
+---
+
+## Použité platformy a technologie
+
+- Prostředí: **MATLAB (verze s podporou .mlx)**
+- Jazyk: **MATLAB Script**
+- Knihovny: **Statistics and Machine Learning Toolbox**
+- Formát dat: **Strukturovaná data (NBA dataset)**
+- Výstup: **Live Script, Grafy**
+
+---
+
+> Projekt byl vypracován Bc. Tomášem Calábkem (ID: 237881) jako semestrální úloha pro kurz **MPC-CSI** (Číslicové signály a systémy) na VUT FEKT.
